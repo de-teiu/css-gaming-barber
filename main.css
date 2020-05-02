@@ -1,0 +1,53 @@
+.body {
+    background: linear-gradient(
+        -30deg,
+        red 0%,
+        yellow 8.33%,
+        green 16.67%,
+        aqua 25%,
+        blue 33.33%,
+        fuchsia 41.67%,
+        red 50%,
+        yellow 58.33%,
+        green 66.67%,
+        aqua 75%,
+        blue 83.33%,
+        fuchsia 91.67%,
+        red 100%
+    );
+    background-size: 346px 200px;
+
+    animation: barber-anime 1000ms linear infinite;
+    width: 80px;
+    height: 400px;
+}
+
+@keyframes barber-anime {
+    0% {
+        background-position: 0px 0px;
+    }
+
+    100% {
+        background-position: 0px -200px;
+    }
+}
+
+.barber {
+    width: 100px;
+}
+
+.head {
+    height: 30px;
+    background-color: #404040;
+}
+
+.foot {
+    height: 60px;
+    background-color: #404040;
+}
+
+.barber > div {
+    border: 1px solid #202020;
+    margin: 0 auto;
+    box-shadow: 3px 2px 3px 3px rgba(0,0,0,0.3);
+}
